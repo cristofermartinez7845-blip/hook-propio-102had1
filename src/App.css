@@ -1,0 +1,30 @@
+body {
+  background-color: #1a1a2e;
+  color: white;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #4f46e5;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #3730a3;
+}
+
+button:disabled {
+  background-color: #555;
+  color: #aaa;
+  cursor: not-allowed;
+}
